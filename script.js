@@ -34,3 +34,13 @@ function animateBorder() {
 }
 
 animateBorder();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("barra-btn");
+  const menu = document.getElementById("menu-opcoes");
+
+  btn.addEventListener("click", function () {
+    menu.classList.toggle("active");
+    btn.classList.toggle("active");
+  });
+});

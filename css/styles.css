@@ -25,6 +25,11 @@ body {
     background-position: 0 0, 50px 30px, 100px 150px, 200px 200px; */
 }
 
+.container {
+    width: 100%;
+    height: 100%;
+}
+
 video{
     position: fixed;
     top: 0;
@@ -43,11 +48,13 @@ nav {
 }
 
 .barra-nv{
+    position: relative;
     width: 100%;
     height: 80px;
     padding: 0 2rem;
-    position: relative;
-    text-align: end;
+    position: fixed;
+    text-align: right;
+    z-index: 4;
 }
 
 .barra-nv ul {
@@ -60,7 +67,7 @@ nav {
 .barra-nv-itens li {
     position: relative;
     top: 40%;
-    right: 40px;
+    right: 70px;
     display: inline-flex;
     text-transform: uppercase;
     height: 10px;
@@ -92,6 +99,52 @@ nav {
     color: #e7e7e7;
 }
 
+.button-barra {
+    position: absolute;
+    bottom: -4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.menu-opcoes {
+    position: fixed;
+    background-color: #2d46d1;
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    right: 0;
+    top: 70px;
+    z-index: 3;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-opcoes.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.menu-opcoes a {
+  display: block;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.menu-opcoes a:hover {
+    background-color: #001bb1;
+}
+
+
 /* Estilizando parte da apresentação */
 
 .apresentacao {
@@ -104,6 +157,10 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+h1 {
+    text-align: center;
 }
 
 .apresentacao h3{
@@ -407,7 +464,7 @@ a {
     gap: 20%;
     background-color: #5252527c;
     border-radius: 10px;
-    z-index: 10;
+    z-index: 1;
 }
 
 
@@ -432,6 +489,7 @@ a {
     color: #fff;
     width: 100%;
     background-color: #000d47;
+    bottom: -10px;
 }
 
 .rodape nav {
@@ -504,3 +562,189 @@ a {
     padding: 2px;
 }
 
+@media screen and (max-width: 992px) {
+
+    .container{
+        width: 100%;
+    }
+
+    .barra-nv {
+        display: none;
+    }
+
+        
+    .barra-nv-mobile{
+        position: relative;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        text-align: right;
+        z-index: 4;
+    }
+
+    .barra-nv-mobile button {
+        line-height: 10px;
+        margin-right: 40px;
+        padding: 0;
+        right: 0;
+        top: 40%;
+    }
+
+    .barra-nv-mobile button {
+        height: 20px;   
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .barra-nv-mobile span {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        display: block;
+        border-radius: 2px;
+    }
+
+    .button-barra.active span {
+         background-color: #1760ff;
+    }
+
+    .button-barra {
+        display: block;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        object-fit: cover;
+    }
+
+    .img-projetos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .img-projetos img {
+        width: 300px;
+    }
+
+    .apresentacao h1, 
+    .projetos h2,
+    .skills h2,
+    .cursos h2,
+    .aboutme h2 {
+        font-size: 65px;
+    }
+
+    .apresentacao h2 {
+        font-size: 30px;
+    }
+
+    .line-division {
+        position: static;
+        width: 90px;
+        height: 2px;
+    }
+    
+    .icones-skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .skills figure {
+        width: 170px;
+        margin: 0;
+    }
+    
+    .cursos img {
+        width: 300px;
+    }
+
+    .img-cursos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr );
+        width: 100%;
+        justify-content: center;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 65px;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .img-cursos p {
+        text-align: center;
+        margin: 0;
+    }
+    
+    .img-cursos figure {
+        width: auto;
+    }
+
+    p {
+        display: block;
+        width: 100%;
+        max-width: 100vh;
+        font-size: 15px;
+    }
+
+    .aboutme figure {
+        width: auto;
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        padding: 0;
+        margin: 20px;
+    }
+
+    .aboutme h3 {
+        display: block;
+        width: auto;
+        max-width: 100vh;
+        font-size: 15px;
+        margin: 20px;
+    }
+
+    .rodape {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    .icones-contato {
+        text-align: center;
+        margin: 0;
+    }
+
+    .rodape ul {
+        width: 80px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .rodape li{
+        width: 80px;
+    }
+
+    .categorias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
