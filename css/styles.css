@@ -645,7 +645,7 @@ a {
 
     .apresentacao h2 {
         font-size: 30px;
-        text-shadow: none;
+        text-shadow: 0 0 10px #0037ac57;
     }
 
     .line-division {
