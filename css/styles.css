@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 
@@ -30,7 +30,7 @@ body {
     height: 100%;
 }
 
-video{
+video {
     position: fixed;
     top: 0;
     left: 0;
@@ -47,7 +47,7 @@ nav {
     padding: 0;
 }
 
-.barra-nv{
+.barra-nv {
     position: relative;
     width: 100%;
     height: 80px;
@@ -87,7 +87,7 @@ nav {
     transform: translateX(-50%);
     width: 20%;
     height: 2px;
-    background-color:#1760ff;
+    background-color: #1760ff;
     transition: width 0.4s ease-in-out;
 }
 
@@ -120,7 +120,7 @@ nav {
     right: 0;
     top: 70px;
     z-index: 3;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     opacity: 0;
     transform: translateY(-20px);
     pointer-events: none;
@@ -128,16 +128,16 @@ nav {
 }
 
 .menu-opcoes.active {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .menu-opcoes a {
-  display: block;
-  color: white;
-  padding: 8px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
 }
 
 .menu-opcoes a:hover {
@@ -163,7 +163,7 @@ h1 {
     text-align: center;
 }
 
-.apresentacao h3{
+.apresentacao h3 {
     width: 100%;
     height: 30px;
     font-size: 20px;
@@ -185,12 +185,12 @@ h1 {
     display: flex;
     justify-content: center;
     -webkit-text-stroke: 2px rgb(0, 43, 233);
-    text-shadow: 
-    0 0 40px rgb(0, 26, 255),
-    0 0 80px rgb(0, 26, 255);
+    text-shadow:
+        0 0 40px rgb(0, 26, 255),
+        0 0 80px rgb(0, 26, 255);
 }
 
-.apresentacao h1{
+.apresentacao h1 {
     width: 100%;
     font-size: 120px;
     font-weight: 900;
@@ -219,9 +219,13 @@ h1 {
     margin-top: 30px;
 }
 
+p {
+    line-height: 25px;
+}
+
 /* Estilizando parte de projetos */
 
-.projetos{
+.projetos {
     position: relative;
     width: 100%;
     max-width: 100vw;
@@ -233,7 +237,7 @@ h1 {
     color: #fff;
 }
 
-.projetos h2{
+.projetos h2 {
     width: 100%;
     font-size: 100px;
     font-weight: 600;
@@ -252,16 +256,17 @@ h1 {
     z-index: 1;
 }
 
-.img-projetos img{
+.img-projetos img {
     width: 650px;
     height: 300px;
-    object-fit: cover; /* ou 'contain', conforme desejar */
+    object-fit: cover;
+    /* ou 'contain', conforme desejar */
     margin-bottom: 10px;
     border-radius: 10px;
     filter: brightness(0.8) contrast(1);
 }
 
-.line-division{
+.line-division {
     content: " ";
     position: absolute;
     bottom: 0;
@@ -323,7 +328,7 @@ h1 {
     text-align: center;
 }
 
-.icones-skills{
+.icones-skills {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-color: transparent;
@@ -332,12 +337,13 @@ h1 {
 
 .icones-skills img {
     margin: 10px;
-    object-fit: contain; /* ou 'contain', conforme desejar */
+    object-fit: contain;
+    /* ou 'contain', conforme desejar */
     margin-bottom: 10px;
     border-radius: 4px;
 }
 
-img{
+img {
     margin-top: 10px;
     width: 50px;
 }
@@ -350,10 +356,12 @@ a {
     color: #ccc;
     transform: scale(1.1);
 }
+
 .linkedin:hover {
     color: #ccc;
     transform: scale(1.1);
 }
+
 .instagram:hover {
     color: #ccc;
     transform: scale(1.1);
@@ -372,7 +380,7 @@ a {
 
 /* Estilizando parte de cursos */
 
-.cursos{
+.cursos {
     position: relative;
     width: 100%;
     max-width: 100vw;
@@ -384,7 +392,7 @@ a {
     color: #fff;
 }
 
-.cursos h2{
+.cursos h2 {
     width: 100%;
     font-size: 100px;
     font-weight: 600;
@@ -413,10 +421,11 @@ a {
     margin: 10px;
 }
 
-.img-cursos img{
+.img-cursos img {
     width: 100%;
     height: 300px;
-    object-fit: cover; /* ou 'contain', conforme desejar */
+    object-fit: cover;
+    /* ou 'contain', conforme desejar */
     margin-bottom: 10px;
     border-radius: 10px;
     filter: brightness(0.8) contrast(1);
@@ -424,7 +433,7 @@ a {
 
 /* About me */
 
-.aboutme{
+.aboutme {
     position: relative;
     width: 100%;
     max-width: 100vw;
@@ -451,6 +460,7 @@ a {
     width: 500px;
     font-size: medium;
     font-weight: 400;
+    line-height: 25px;
 }
 
 .aboutme figure {
@@ -520,10 +530,10 @@ a {
     content: "";
     position: absolute;
     width: 20%;
-    height: 2px; 
+    height: 2px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #0036ac; 
+    background-color: #0036ac;
     bottom: 0;
 }
 
@@ -546,8 +556,8 @@ a {
     align-items: center;
 }
 
-.icones-contato figcaption{ 
-    font-size: small; 
+.icones-contato figcaption {
+    font-size: small;
     height: 20px;
     display: flex;
     justify-content: center;
@@ -564,7 +574,7 @@ a {
 
 @media screen and (max-width: 992px) {
 
-    .container{
+    .container {
         width: 100%;
     }
 
@@ -572,8 +582,8 @@ a {
         display: none;
     }
 
-        
-    .barra-nv-mobile{
+
+    .barra-nv-mobile {
         position: relative;
         width: 100%;
         height: 80px;
@@ -591,7 +601,7 @@ a {
     }
 
     .barra-nv-mobile button {
-        height: 20px;   
+        height: 20px;
         background: none;
         border: none;
         cursor: pointer;
@@ -609,7 +619,7 @@ a {
     }
 
     .button-barra.active span {
-         background-color: #1760ff;
+        background-color: #1760ff;
     }
 
     .button-barra {
@@ -635,7 +645,7 @@ a {
         width: 300px;
     }
 
-    .apresentacao h1, 
+    .apresentacao h1,
     .projetos h2,
     .skills h2,
     .cursos h2,
@@ -653,7 +663,7 @@ a {
         width: 90px;
         height: 2px;
     }
-    
+
     .icones-skills {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -664,14 +674,14 @@ a {
         width: 170px;
         margin: 0;
     }
-    
+
     .cursos img {
         width: 300px;
     }
 
     .img-cursos {
         display: grid;
-        grid-template-columns: repeat(1, 1fr );
+        grid-template-columns: repeat(1, 1fr);
         width: 100%;
         justify-content: center;
     }
@@ -690,7 +700,7 @@ a {
         text-align: center;
         margin: 0;
     }
-    
+
     .img-cursos figure {
         width: auto;
     }
@@ -723,7 +733,7 @@ a {
         display: flex;
         height: auto;
         flex-direction: column;
-        align-items: center;   
+        align-items: center;
     }
 
     .icones-contato {
@@ -738,7 +748,7 @@ a {
         text-align: center;
     }
 
-    .rodape li{
+    .rodape li {
         width: 80px;
     }
 

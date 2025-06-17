@@ -38,9 +38,17 @@ animateBorder();
 document.addEventListener("DOMContentLoaded", function () {
   const btn = document.getElementById("barra-btn");
   const menu = document.getElementById("menu-opcoes");
+  const menuLinks = document.querySelectorAll(".menu-link")
 
   btn.addEventListener("click", function () {
     menu.classList.toggle("active");
     btn.classList.toggle("active");
+
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("active")
+    })
+  })
+
   });
 });
