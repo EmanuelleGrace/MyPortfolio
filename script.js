@@ -35,6 +35,8 @@ function animateBorder() {
 
 animateBorder();
 
+// Função para que o menu apareça quando o botão for clicado, e para que desapareça quando algum link dentro do menu seja clicado
+
 document.addEventListener("DOMContentLoaded", function () {
   const btn = document.getElementById("barra-btn");
   const menu = document.getElementById("menu-opcoes");
@@ -49,6 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
       menu.classList.remove("active")
     })
   })
-
   });
 });
+
