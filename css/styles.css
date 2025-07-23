@@ -30,6 +30,10 @@ body {
     height: 100%;
 }
 
+a {
+    color: #fff;
+}
+
 video {
     position: fixed;
     top: 0;
@@ -248,6 +252,7 @@ p {
     justify-content: center;
 }
 
+
 .img-projetos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -256,14 +261,15 @@ p {
     z-index: 1;
 }
 
+.img-projetos figure {
+    width: 100%;
+    margin: 0;
+}
+
 .img-projetos img {
-    width: 650px;
-    height: 300px;
+    width: 900px;
+    height: 450px;
     object-fit: cover;
-    /* ou 'contain', conforme desejar */
-    margin-bottom: 10px;
-    border-radius: 10px;
-    filter: brightness(0.8) contrast(1);
 }
 
 .line-division {
@@ -272,7 +278,7 @@ p {
     bottom: 0;
     top: 320px;
     width: 2px;
-    height: 50%;
+    left: 50%;
     border-radius: 1px;
     background-color: #1760ff;
     box-shadow:
@@ -326,7 +332,9 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: 0.3s;
 }
+
 
 .icones-skills {
     display: grid;
