@@ -332,7 +332,7 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: 0.3s;
+    transition: all 1s ease;
 }
 
 
@@ -417,7 +417,18 @@ a {
     text-align: center;
     background-color: transparent;
     z-index: 1;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
+
+.img-cursos figure:hover {
+    transform: scale(1.1);
+    filter: 1.2;
+}
+
+.img-cursos img:hover {
+    filter: none;
+}
+
 
 .img-cursos p {
     margin: 15px 5px;
@@ -437,6 +448,8 @@ a {
     margin-bottom: 10px;
     border-radius: 10px;
     filter: brightness(0.8) contrast(1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+
 }
 
 /* About me */

@@ -54,27 +54,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Evento para que ao passar o mouse em cima da figura mudar o figcaption
 
-    // 1. Pegamos o elemento figcaption pelo ID
-    const html = document.getElementById('html');
+// estilização da área de cursos
 
-    // 2. Evento quando o mouse entra na legenda
-    html.addEventListener('mouseover', function() {
-      // Passo 1: esconde suavemente
-      html.textContent = 'Básico';
-
-    });
-
-    html.addEventListener('mouseout', function() {
-      // Muda o texto
-      html.textContent = 'HTML';
-      html.style.color = '#FFF';
-    });
-    // 3. Evento quando o mouse sai da legenda
-    // html.addEventListener('mouseout', function() {
-    //   // Volta o texto original
-    //   html.textContent = 'HTML';
-    
-    // });
-
+  const galeria = document.querySelector('.img-cursos');
+  const total = galeria.querySelectorAll('img').length;
+  const colunas = Math.min(total, 3);
+  galeria.style.gridTemplateColumns = `repeat(${colunas}, 1fr)`;
