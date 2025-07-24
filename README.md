@@ -25,10 +25,10 @@ Sou a **Emanuelle Grace**, 20 anos, desenvolvedora Full‑Stack com foco em **ba
 
 ## 🚀 Projetos
 
-- **Landing Page – hDC Host**  
+- **Landing Page – hDC Host**   
   Desenvolvida com **HTML, CSS e JavaScript** para empresa de hospedagem, com foco em design responsivo e usabilidade.
 
-- **Pizzaria João**
+- **Pizzaria João**  
   Um sistema simples de gerenciamento de pizzaria, desenvolvido com PHP, MySQL e um toque de estilo com CSS.
 
 ---
