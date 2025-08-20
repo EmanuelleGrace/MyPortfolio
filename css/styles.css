@@ -261,6 +261,32 @@ p {
     z-index: 1;
 }
 
+.foto-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.foto-container:hover {
+    transform: scale(1.05);
+    z-index: 3;
+}
+
+.foto {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(0.85) contrast(1.1);
+    transition: var(--transition);
+}
+
+.foto-container:hover .foto {
+    filter: brightness(1) contrast(1.2);
+}
+
 .img-projetos figure {
     width: 100%;
     margin: 0;

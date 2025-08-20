@@ -61,3 +61,29 @@ document.addEventListener("DOMContentLoaded", function () {
   const total = galeria.querySelectorAll('img').length;
   const colunas = Math.min(total, 3);
   galeria.style.gridTemplateColumns = `repeat(${colunas}, 1fr)`;
+
+
+// Animação área de projetos
+
+function animarProjetos() {
+    // Aqui busco todos os containers de fotos que criei no HTML usando seletores CSS
+    const fotoContainers = document.querySelectorAll('.foto-container');     
+        // Adiciono evento de hover para destacar a foto quando o mouse passa por cima
+        // Isso torna a galeria de vocês mais interativa e divertida de explorar
+        container.addEventListener('mouseenter', () => {
+            // Verifico se o container é um HTMLElement antes de modificar suas propriedades
+            // Isso é uma boa prática para evitar erros no JavaScript
+            if (container instanceof HTMLElement) {
+                container.style.zIndex = '10';  // Valor alto de z-index traz a foto para frente
+            }
+        });
+        
+        // Quando o mouse sai da foto, ela volta ao seu estado normal
+        // Isso garante que a interface fique organizada quando não estiver em uso
+        container.addEventListener('mouseleave', () => {
+            // Mesma verificação de tipo para garantir compatibilidade em todos os navegadores
+            if (container instanceof HTMLElement) {
+                container.style.zIndex = '3';  // Valor menor de z-index coloca a foto de volta na camada normal
+            }
+        });
+    };
